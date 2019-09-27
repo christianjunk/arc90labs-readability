@@ -2,7 +2,7 @@
 
 dir
 164
-http://arc90labs-readability.googlecode.com/svn/trunk/lib/Zend/Mail/Protocol/Smtp/Auth
+http://arc90labs-readability.googlecode.com/svn/branches/haiti/lib/Zend/Mail/Protocol/Smtp/Auth
 http://arc90labs-readability.googlecode.com/svn
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2016-02-14T02:04:26.275478Z
+2016-02-14T02:04:27.307449Z
 7f3798c07e41363443617e198e3f5c5d
 2009-12-10T00:21:56.012476Z
 82
@@ -66,7 +66,7 @@ file
 
 
 
-2016-02-14T02:04:26.275478Z
+2016-02-14T02:04:27.307449Z
 2d9d49e772980d7d691708229b7ccbd1
 2009-12-10T00:21:56.012476Z
 82
@@ -100,7 +100,7 @@ file
 
 
 
-2016-02-14T02:04:26.275478Z
+2016-02-14T02:04:27.307449Z
 280cbc866704ec7f5b071d53ef3a15ce
 2009-12-10T00:21:56.012476Z
 82

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Readability &ndash; Un experimento de Arc90 Laboratory</title>
+  <title>Readability - Un experimento de Arc90 Laboratory</title>
   <meta name="author" content="Arc90">
-  <meta name="description" content="Readability&trade; es una herramienta simple que have de leer en la web una tarea m&aacute;s placentera al remover el desorden que hay alrededor de lo que est&aacute;s leyendo.">
+  <meta name="description" content="Readability es una herramienta simple que have de leer en la web una tarea m&aacute;s placentera al remover el desorden que hay alrededor de lo que est&aacute;s leyendo.">
   <link rel="stylesheet" href="../css/readability-home.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="../css/fancybox.css" type="text/css" media="screen" charset="utf-8">
   <link rel="icon" type="image/png" href="../images/icon-readability-favicon.png">
@@ -15,41 +15,49 @@
     </style>
   <![endif]-->
   <script src="../js/jquery-1.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../js/es/readability-start.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/readability-start.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/jquery.fancybox-1.2.6.pack.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="http://use.typekit.com/thw1vhb.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+    languagesAvailable  = ['es'];
+    language            = (navigator.language || navigator.userLanguage);
+    languageCode        = language.replace(/-.*/,'').toLowerCase();
+    if(languageCode != 'en') {
+      languageIsAvailable = false;
+      for(l in languagesAvailable) {
+        if(languagesAvailable[l] == languageCode) {
+          languageIsAvailable = true;
+          break;
+        }
+      }
+      if(languageIsAvailable) {
+        window.location = "http://lab.arc90.com/experiments/readability/" + languageCode;
+      }
+    }
+  </script>
 </head>
 <body>
 
 <div id="container">
   <div id="header">
-    <h1>Readability&trade;<span class="secondary-title"> &mdash; Un experimento de Arc90 Laboratory</span></h1>
+    <h1>Readability<span class="secondary-title"> &mdash; Un experimento de Arc90 Laboratory</span></h1>
 
     <div id="introduction">
-      <p><em>Readability</em>&trade; es una herramienta sencilla que hace de leer en la web una tarea m&aacute;s placentera, eliminando el desorden alrededor de lo que est&aacute;s leyendo. Sigue los pasos descritos abajo para instalar <em>Readability</em>&trade; en tu navegador.</p>
+      <p><em>Readability</em> es una herramienta simple que have de leer en la web una tarea m&aacute;s placentera al remover el desorden que hay alrededor de lo que est&aacute;s leyendo. Sigue los pasos abajo para instalar <em>Readability</em> en tu navegador Web.</p>
     </div>  <!-- End #introduction -->
 
     <div id="watch-video">
-      <a href="#video-other" class="video" title="Video de Presentaci&oacute;n" id="video-instruction"><img src="../images/badge-video.png" width="104" height="104" alt="Video de Presentaci&oacute;n"></a>
+      <a href="#video" class="video" title="Video de Presentaci&oacute;n"><img src="../images/badge-video.png" width="104" height="104" alt="Video de Presentaci&oacute;n"></a>
 
-      <div id="video-ie" style="display:none;">
+      <div id="video" style="display:none;">
         <object width="480" height="360">
           <param name="allowfullscreen" value="true">
           <param name="allowscriptaccess" value="always">
-          <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8798529&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1">
-          <embed src="http://vimeo.com/moogaloop.swf?clip_id=8798529&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="360"></embed>
+          <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3445774&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1">
+          <embed src="http://vimeo.com/moogaloop.swf?clip_id=3445774&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="360"></embed>
         </object>
-      </div>  <!-- End #video-ie -->
-
-      <div id="video-other" style="display:none;">
-        <object width="480" height="360">
-          <param name="allowfullscreen" value="true">
-          <param name="allowscriptaccess" value="always">
-          <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8798492&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1">
-          <embed src="http://vimeo.com/moogaloop.swf?clip_id=8798492&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="360"></embed>
-        </object>
-      </div>  <!-- End #video-other -->
+      </div>  <!-- End #video -->
     </div>
 
     <div class="meta">
@@ -67,8 +75,8 @@
         <dd><input type="radio" name="style" value="style-newspaper" id="newspaper" checked="checked"><label for="newspaper">Diario</label></dd>
         <dd><input type="radio" name="style" value="style-novel" id="novel"><label for="novel">Novela</label></dd>
         <dd><input type="radio" name="style" value="style-ebook" id="ebook"><label for="ebook">eBook</label></dd>
-        <dd><input type="radio" name="style" value="style-apertura" id="apertura"><label for="apertura" title="Powered by Typekit">Inverse</label><a href="http://typekit.com/?utm_source=readability&amp;utm_medium=affiliate&amp;utm_campaign=inverse" title="Powered by Typekit" target="_blank"><em>Powered by Typekit</em></a></dd>
-        <dd><input type="radio" name="style" value="style-athelas" id="athelas"><label for="athelas" title="Powered by Typekit">Athelas</label><a href="http://typekit.com/?utm_source=readability&amp;utm_medium=affiliate&amp;utm_campaign=athelas" title="Powered by Typekit" target="_blank"><em>Powered by Typekit</em></a></dd>
+        <dd><input type="radio" name="style" value="style-apertura" id="apertura"><label for="apertura" class="powered-typekit" title="Powered by Typekit">Inverso</label></dd>
+        <dd><input type="radio" name="style" value="style-athelas" id="athelas"><label for="athelas" class="powered-typekit" title="Powered by Typekit">Athelas</label></dd>
       </dl>
       <dl class="settings-box" id="size">
         <dt>Elige un Tama&ntilde;o de Fuente:</dt>
@@ -86,21 +94,15 @@
         <dd><input type="radio" name="margin" value="margin-wide" id="wide" checked="checked"><label for="wide">Ancho</label></dd>
         <dd><input type="radio" name="margin" value="margin-x-wide" id="x-wide"><label for="x-wide">Muy Ancho</label></dd>
       </dl>
-      <p><input type="checkbox" name="footnotes" value="1" id="footnotes"><label for="footnotes">Convertir hipervínculos en notas a pie de p&aacute;gina</label> <a href="#whats-this" title="¿Qu&eacute; convierte hiperenlaces a notas a pie de p&aacute;gina hacen?" id="footnote-details">¿Qu&eacute; es esto?</a></p>
-      <div id="whats-this" style="display:none;">
-        <h3>Convertir Hiperenlaces a Notas a pie de p&aacute;gina</h3>
-        <p>La lectura en la web puede ser dif&iacute;cil. Los art&iacute;culos a menudo son regados con lazos &mdash; le distrayendo del contenido &mdash; y tirar su atenci&oacute;n en otra parte.</p>
-        <p>Seleccionar el "Convierta hiperenlaces a notas a pie de p&aacute;gina" caja har&aacute; la Legibilidad saca los lazos de sus art&iacute;culos y los formatear como notas a pie de p&aacute;gina elegantes. El texto originalmente ligado ser&aacute; marcado con una llamada sencilla para que sepa exactamente donde notas a pie de p&aacute;gina corresponden a sus documentos.</p>
-      </div>
     </li>  <!-- End #settings -->
 
     <li id="bookmarklet">
-      <h2>Agrega tu marcardor</h2>
+      <h2>Agrega t&uacute; marcardor</h2>
       <p id="browser-instruction-placer"></p>
-      <p id="browser-instruction" style="display:none;">A continuaci&oacute;n, arrastra el marcador <em>Readability</em>&trade; a la barra de herramientas de tu navegador preferido:</p>
-      <p id="browser-instruction-ie" style="display:none;">Haga clic derecho sobre el <em>Readabilty</em>&trade; placa de abajo y seleccione &ldquo;Agregar a Favoritos&hellip;&rdquo;:</p>
+      <p id="browser-instruction" style="display:none;">Arrastre el <em>Readability</em> de placas a continuaci&oacute;n para su navegador favorito de la barra de herramientas:</p>
+      <p id="browser-instruction-ie" style="display:none;">Haga clic derecho sobre el <em>Readabilty</em> placa de abajo y seleccione &ldquo;Agregar a Favoritos&hellip;&rdquo;:</p>
       <a id="bookmarkletLink" title="Readability"><img src="../images/badge-readability.png" width="174" height="40" alt="Readability"></a>
-      <p>Cuando est&eacute; visitando una p&aacute;gina Web que valga la pena leer, simplemente haz click en el marcador para activar <em>Readability</em>&trade;.</p>
+      <p>Cuando est&eacute; visitando una p&aacute;gina Web que valga la pena leer, simplemente haz click en el link para activar <em>Readability</em>.</p>
     </li>  <!-- End #bookmarklet -->
   </ol>  <!-- End #instructions -->
 
@@ -110,8 +112,11 @@
     <div id="example" class="style-newspaper">
       <div id="articleContent" class="margin-wide size-large">
         <h1>Compilando Contenido Que Vale La Pena Leer</h1>
+        <hr>
   			<p>Cuando Gregorio Samsa se despert&oacute; una ma&ntilde;ana de sue&ntilde;o intranquilo, se encontr&oacute; en su cama en un insecto gigante. Estaba tendido en su duro, por as&iacute; decirlo caparaz&oacute;n, la espalda y cuando levant&oacute; la cabeza un poco de poder ver su vientre oscuro, domo dividido en segmentos de arco r&iacute;gido en la parte superior de la colcha que no pod&iacute;a permanecer en el lugar y estaba a punto a deslizarse por completo. Sus piernas numerosos, que fueron rid&iacute;culamente peque&ntilde;as en comparaci&oacute;n con el resto de su volumen, agit&oacute; impotente ante sus ojos.</p>
   			<p>&iquest;Qu&eacute; ha ocurrido a m&iacute;? , pens&oacute;. No era un sue&ntilde;o. Su habitaci&oacute;n, una habitaci&oacute;n humana regular, s&oacute;lo demasiado peque&ntilde;a, permanec&iacute;a tranquila dentro de sus cuatro paredes familiar. Por encima de la mesa en la que una colecci&oacute;n de muestras de tela fue desembalado y hacia fuera-Samsa era viajante de comercio-colgado el cuadro que hac&iacute;a poco hab&iacute;a recortado de una revista ilustrada y poner en un bonito marco dorado. Mostr&oacute; una dama con un sombrero de piel y en una estola de piel, sentarse derecho y sosteniendo al espectador un amplio manguito de piel en la que la totalidad de su antebrazo hab&iacute;a desaparecido!</p>
+  			<p>Los ojos de Gregorio se volvi&oacute; al lado de la ventana, y el cielo nublado, se o&iacute;an las gotas de lluvia golpeando la ventana del canal-le hizo muy melanc&oacute;lica. &iquest;Qu&eacute; acerca de dormir un poco m&aacute;s y olvidar toda esta tonter&iacute;a, pens&oacute;, pero no se pod&iacute;a hacer, porque estaba acostumbrado a dormir sobre el lado derecho y en su estado actual no pod&iacute;a entregarse. Sin embargo, se oblig&oacute; violentamente hacia el lado derecho, que siempre se dio la vuelta otra vez. Lo intent&oacute; por lo menos un centenar de veces, cerrando los ojos para no ver sus piernas luchando, y s&oacute;lo desisti&oacute; cuando empez&oacute; a sentir en el costado un dolor sordo d&eacute;bil que nunca hab&iacute;a sentido antes.</p>
+  			<p>&iexcl;Oh, Dios, pens&oacute;, lo que es un trabajo agotador que he elegido para m&iacute;! En el d&iacute;a de carreteras a d&iacute;a. Es un trabajo mucho m&aacute;s irritante que hacer el negocio real en la oficina en casa, y encima de que no es el problema de viajar constantemente, de preocuparse por las conexiones de trenes, la mala alimentaci&oacute;n y las comidas irregulares, conocidos ocasionales que siempre son nuevas y nunca llegan a ser &iacute;ntimo amigos. El diablo se lleve todo! Sinti&oacute; un ligero picor en su vientre, poco a poco empujaba a s&iacute; mismo en la espalda cerca de la parte superior de la cama para que pudiera levantar la cabeza con m&aacute;s facilidad, identific&oacute; el lugar de escozor, que estaba rodeado de muchas manchas peque&ntilde;as de color blanco de la naturaleza de la que no pod&iacute;a entender y estaba a punto de tocar con una pierna, pero se&ntilde;al&oacute; a la pierna de atr&aacute;s de inmediato, el contacto que hizo correr un escalofr&iacute;o a trav&eacute;s de &eacute;l.</p>
       </div>  <!-- End #articleContent -->
     </div>  <!-- End #example -->
   </div>  <!-- End #article -->

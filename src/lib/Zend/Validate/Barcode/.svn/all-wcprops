@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 48
-/svn/!svn/ver/82/trunk/lib/Zend/Validate/Barcode
+V 58
+/svn/!svn/ver/111/branches/haiti/lib/Zend/Validate/Barcode
 END
 Ean13.php
 K 25
 svn:wc:ra_dav:version-url
-V 58
-/svn/!svn/ver/82/trunk/lib/Zend/Validate/Barcode/Ean13.php
+V 68
+/svn/!svn/ver/111/branches/haiti/lib/Zend/Validate/Barcode/Ean13.php
 END
 UpcA.php
 K 25
 svn:wc:ra_dav:version-url
-V 57
-/svn/!svn/ver/82/trunk/lib/Zend/Validate/Barcode/UpcA.php
+V 67
+/svn/!svn/ver/111/branches/haiti/lib/Zend/Validate/Barcode/UpcA.php
 END

@@ -2,7 +2,7 @@
 
 dir
 164
-http://arc90labs-readability.googlecode.com/svn/trunk/lib/Zend/Mail/Storage/Writable
+http://arc90labs-readability.googlecode.com/svn/branches/haiti/lib/Zend/Mail/Storage/Writable
 http://arc90labs-readability.googlecode.com/svn
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2016-02-14T02:04:26.387475Z
+2016-02-14T02:04:27.339449Z
 8a8507195a7d7c0bf0d5b0fb65940479
 2009-12-10T00:21:56.012476Z
 82
@@ -66,7 +66,7 @@ file
 
 
 
-2016-02-14T02:04:26.387475Z
+2016-02-14T02:04:27.339449Z
 63568e6d7a69e4608fb5d45f7449980b
 2009-12-10T00:21:56.012476Z
 82

@@ -2,14 +2,14 @@
 
 dir
 164
-http://arc90labs-readability.googlecode.com/svn/trunk/js
+http://arc90labs-readability.googlecode.com/svn/branches/haiti/js
 http://arc90labs-readability.googlecode.com/svn
 
 
 
-2010-11-14T18:08:51.485311Z
-164
-umbrae
+2010-01-17T03:50:49.399126Z
+112
+joel@zeptosoft.com
 
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
-b22f8411d54bd4972ba97f55f5242bbf
-2010-08-07T19:04:29.984992Z
-160
+2016-02-14T02:04:27.619441Z
+bb05e3050629aad1bf33c6cf8a80b057
+2010-01-14T20:36:51.799011Z
+109
 umbrae
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-4654
+2935
 
 jquery.fancybox-1.2.6.pack.js
 file
@@ -66,7 +66,7 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
+2016-02-14T02:04:27.619441Z
 88ccecf1a6030e782bc71648ca1aa4c8
 2010-01-08T00:48:51.360431Z
 106
@@ -100,7 +100,7 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
+2016-02-14T02:04:27.619441Z
 df2cfe20d5607d90484fddd36e8b7dee
 2009-12-10T00:21:56.012476Z
 82
@@ -134,11 +134,11 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
-15402a5402fac187c8d231a21ce04326
-2010-11-14T18:08:51.485311Z
-164
-umbrae
+2016-02-14T02:04:27.619441Z
+11aa2c32fc553ac62c02acaef3579ae1
+2010-01-17T03:50:49.399126Z
+112
+joel@zeptosoft.com
 has-props
 
 
@@ -160,7 +160,7 @@ has-props
 
 
 
-75239
+31878
 
 es
 dir
@@ -171,7 +171,7 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
+2016-02-14T02:04:27.619441Z
 5018fce9eaf1431e83fca0de4a735ef4
 2009-12-10T00:21:56.012476Z
 82
@@ -205,7 +205,7 @@ file
 
 
 
-2016-02-14T02:04:27.023457Z
+2016-02-14T02:04:27.619441Z
 364ed27b45c5c58c1b6b5b24d784d72a
 2009-12-10T00:21:56.012476Z
 82

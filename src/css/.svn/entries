@@ -2,13 +2,13 @@
 
 dir
 164
-http://arc90labs-readability.googlecode.com/svn/trunk/css
+http://arc90labs-readability.googlecode.com/svn/branches/haiti/css
 http://arc90labs-readability.googlecode.com/svn
 
 
 
-2010-08-07T19:04:29.984992Z
-160
+2010-01-18T18:11:13.897960Z
+114
 umbrae
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2016-02-14T02:04:26.971459Z
-434b5a39c0e8eaa362f0fbc4735d1ffd
-2010-08-07T19:04:29.984992Z
-160
+2016-02-14T02:04:27.595442Z
+361dfdc8c91004a3cf4865da298e9d6b
+2010-01-18T18:11:13.897960Z
+114
 umbrae
 has-props
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-5920
+4628
 
 fancybox.css
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2016-02-14T02:04:26.971459Z
-c1d6a1103c03c313a0eb433e75dcc569
-2010-06-03T20:59:28.221447Z
-143
-umbrae
+2016-02-14T02:04:27.595442Z
+9992dc6865c44be9fb71feccf8f33a6b
+2010-01-08T00:48:51.360431Z
+106
+d.lacy84
 
 
 
@@ -92,7 +92,7 @@ umbrae
 
 
 
-4126
+3968
 
 readability-home.css
 file
@@ -100,11 +100,11 @@ file
 
 
 
-2016-02-14T02:04:26.971459Z
-71865f36442d85f77b3b1e8439b038cd
-2010-08-07T19:04:29.984992Z
-160
-umbrae
+2016-02-14T02:04:27.595442Z
+83403e3ccf8b74c40ff36cc21ae04f6a
+2010-01-11T21:42:04.582745Z
+108
+d.lacy84
 has-props
 
 
@@ -126,7 +126,7 @@ has-props
 
 
 
-8933
+7009
 
 es
 dir
@@ -137,10 +137,10 @@ file
 
 
 
-2016-02-14T02:04:26.971459Z
-2e0f4fe022e977c3bf8c445cb9ebf9f8
-2010-07-08T20:25:55.576793Z
-154
+2016-02-14T02:04:27.595442Z
+1b432cfd469f407c43eb478a34e2b980
+2010-01-14T20:36:51.799011Z
+109
 umbrae
 has-props
 
@@ -163,5 +163,5 @@ has-props
 
 
 
-1676
+819
 

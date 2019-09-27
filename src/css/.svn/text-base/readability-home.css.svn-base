@@ -10,7 +10,7 @@ body {
     display: block;
     padding: 0 0 10px;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     }
 
 #container {
@@ -36,11 +36,6 @@ body {
     }
 
 ol,ul { list-style-type: none; padding: 0; margin: 0; }
-
-#readInner ol, #readInner ul {
-	margin: 1em 0px 1em 0px;
-}
-#readInner sup{line-height:.8em;}
 
 img { border: 0; outline: 0; }
 
@@ -125,7 +120,7 @@ em {
     display: inline;
     float: left;
     margin: 55px 0 0 25px;
-    padding: 0 0 35px;
+    padding: 0 0 25px;
     width: 135px;
     }
 
@@ -135,51 +130,7 @@ em {
 
 #settings input { margin: 0 10px 0 0; }
 
-#settings dd a, #settings dd a:link {
-    display: inline-block;
-    height: 14px;
-    margin: 0 0 0 6px;
-    position: relative;
-    width: 14px;
-    top: 5px;
-    background: transparent url("../images/icon-typekit.png") no-repeat 0 0;
-    text-indent: -9000px;
-    }
-
-#settings p {
-    clear: both;
-    display: block;
-    margin: 0 0 10px 0;
-    width: 500px;
-    text-align: center;
-    }
-
-#settings p label { font-style: italic; }
-
-#footnote-details {
-    margin: 0 0 0 5px;
-    padding: 0 0 0 14px;
-    background: transparent url("../images/bg-settings.png") no-repeat -63px -28px;
-    font-size: .8em;
-    font-weight: 600;
-    text-decoration: underline;
-    }
-
-#footnote-details span {
-    margin: 0;
-    padding: 3px 0;
-    background: #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    }
-
-#footnote-details span span {
-    padding: 3px .4em;
-    position: relative;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-width: 1px 1px;
-    }
+#settings .powered-typekit { display: inline; padding-right: 20px; background: transparent url("../images/icon-typekit.png") no-repeat right 1px;}
 
 #bookmarklet {
     display: inline;
@@ -187,10 +138,9 @@ em {
     width: 380px;
     font-size: .9em;
     }
-#bookmarklet h2 {
-    margin-bottom: 45px;
-    background-position: 0 -45px;
-    }
+
+#bookmarklet h2 { background-position: 0 -45px; }
+
 #bookmarklet p {
     margin: 0 0 0 45px;
     width: 330px;
@@ -199,36 +149,10 @@ em {
 #bookmarkletLink {
     display: block;
     height: 40px;
-    margin: 20px 0 20px 115px;
+    margin: 10px 0 10px 115px;
     width: 174px;
     cursor: move;
     }
-#bookmarkletText {
-    margin: 0 0 0 45px;
-    height: 3.6em;
-    width: 330px;
-    }
-#readabilityBadge {
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    -moz-box-shadow:3px 2px 2px 0 rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 3px 2px 2px 0 rgba(0,0,0, 0.35);
-    box-shadow: 3px 2px 2px 0 rgba(0,0,0, 0.35);
-    *border: 1px solid #888; /* IE hax */
-    background-color: #ddd;
-    background: -moz-linear-gradient(90deg, #bbb, #eee) repeat scroll 0 0 transparent;
-    background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#eee));
-    color: #222;
-    letter-spacing: 0.02em;
-    font-size: 22px;
-    font-variant: small-caps;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    width: 167px;
-    cursor: move;
-}
 /* @end instructions */
 
 /* @group footer */
@@ -252,24 +176,10 @@ em {
 	width: 250px;
 	text-align: center;
 	font-size: .8em;
-	margin-top: -10px;
     }
-
-#kindlingAd span {
-	font-size: 11px;
-	}
 /* @end footer */
 
-/* @group overlay */
-#fancy_outer a {
-	color: #036;
-	text-decoration: underline;
-    }
-/* @end overlay */
-
 /* @group Readability Examples */
-#article {font-size:10px;line-height:1;}
-
 #article h2 { 
     display: block;
     margin: 0;
@@ -277,7 +187,7 @@ em {
     position: absolute;
     right: 35px;
     width: 136px;
-    z-index: 10;
+    z-index: 1000;
     background: transparent url("../images/tab-example.png") no-repeat 0 bottom;
     font-weight: 300;
     text-align: center;
@@ -290,67 +200,95 @@ em {
     }
 
 #articleContent h1 {
-	display: block;
-	padding-bottom: .5em;
-	margin-bottom: .75em;
-	border-bottom:1px solid #333;
 	font-size: 1.2em;
+	display: block;
 	text-transform: capitalize;
     }
-    
-#articleContent a:hover {
-    text-decoration: underline;
-}
-    
-#articleContent ol {
-    list-style-type: decimal;
-    list-style-position: outside;
-    margin-left: 2em;
-}
-
-#example #references {
-    display: none;
-}
-
-#example a.footnote {
-    display: none;
-}
-
-#example.showNotes #articleBody a {
-    color: inherit;
-}
-
-#example.showNotes #references {
-    display: block;
-}
-
-#example.showNotes a.footnote {
-    display: inline;
-}
-
 /* Size options */
 .size-x-small { font-size: 12px; }
 .size-small { font-size: 15px; }
 .size-medium { font-size: 18px; }
-.size-large { font-size: 22px; }
-.size-x-large { font-size: 28px; }
+.size-large { font-size: 26px; }
+.size-x-large { font-size: 34px; }
 /* Style options */
-.style-newspaper { font-family:Georgia,"Times New Roman", Times, serif; background:#fbfbfb; color:#080000; }
-.style-newspaper h1 { text-transform:capitalize; font-family:Georgia, "Times New Roman", Times, serif; }
-.style-newspaper #readInner a { color:#0924e1; }
-.style-novel { font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; background:#f4eed9; color:#1d1916; }
-.style-novel #readInner a { color:#1856ba; }
-.style-ebook { font-family:Arial, Helvetica, sans-serif; background:#edebe8; color:#2c2d32; }
-.style-ebook #readInner a { color:#187dc9; }
-.style-ebook h1 { font-family:"Arial Black", Gadget, sans-serif; font-weight:400; }
-.style-terminal { font-family:"Lucida Console", Monaco, monospace; background:#1d4e2c; color:#c6ffc6; }
-.style-terminal #readInner a { color:#093; }
+.style-novel {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background: #f4f3db;
+	color: #222;
+    }
+.style-ebook {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #eee;
+	color: #333;
+    }
+.style-ebook h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: 400;
+    }
+.style-newspaper {
+	font-family: "Times New Roman", Times, serif;
+	background: #f7f7f7;
+	color: #222;
+    }
+.style-newspaper h1 {
+	text-transform: capitalize;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    }
+.style-terminal {
+	font-family: "Lucida Console", Monaco, monospace;
+	background: #1d4e2c;
+	color: #c6ffc6;
+    }
 /* Begin Typekit Styles */
-.style-apertura { font-family:"apertura-1", "apertura-2", sans-serif; background:#2d2828; color:#eae8e9; }
-.style-apertura #articleContent h1 { border-bottom-color: #ededed; }
-.style-apertura #readInner a { color:#58b0ff; }
-.style-athelas { font-family:"athelas-1", "athelas-2", sans-serif; background:#f7f7f7; color:#2b373d; }
-.style-athelas #readInner a { color:#1e83cb; }
+.style-apertura {
+    font-family: "apertura-1", "apertura-2", sans-serif;
+    background-color: #2e2e2e;
+    color: #efefef;
+    }
+.style-athelas {
+    font-family: "athelas-1", "athelas-2", sans-serif;
+    background-color: #fd2;
+    color: #0b1924;
+    }
+.style-athelas hr {
+    border-color: #23211f;
+    }
+.style-droid-mono {
+    font-family: "droid-sans-mono-1", "droid-sans-mono-2", monospace;
+    background-color: #eee;
+    color: #2f2f2f;
+    }
+.style-ff-meta-web-pro {
+    font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2", sans-serif;
+	background-color: #fdfdfd;
+	color: #434343;
+    }
+.style-ff-meta-web-pro h1 {
+    font-family: "ff-meta-web-pro-2", "ff-meta-web-pro-1", sans-serif;
+    font-weight: 800;
+    }
+.style-classy {
+	font-family: sans-serif;
+	background-color: #FDFDFD;
+	color: #434343;
+    }
+.style-classy #readInner a {
+	color: #8F674B;
+	text-decoration: none;
+    }
+.style-post {
+	font-family: "Droid Sans", "Arial", sans-serif;
+	background-color: #FFF;
+	color: #222;
+    }
+.style-post h1 {
+	font-family: "League Gothic";
+	font-size: 53px;
+	letter-spacing: 2px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+    }
 /* Margin Options */
 .margin-x-narrow { width: 95%; }
 .margin-narrow { width: 85%; }
